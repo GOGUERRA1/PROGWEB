@@ -2,11 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Top Games</title>
+<title>Top Games | Inicio</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">	
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -35,6 +39,9 @@
 						</div>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link  text-white" href="form.html">Registro</a>
+					</li>
+					<li class="nav-item">
 						<a class="nav-link  text-white" href="contacto.html">Contacto</a>
 					</li>
 					
@@ -46,44 +53,68 @@
 
 
 <section class=" container">
-	<div class="row my-3">
-		<div class="col-sm">
-				<a class="" href="terror.html">
-					<div class="card w-100" id="terror">
-						<h2 class="cattitle">Terror</h2>
-					</div>
-				</a>
-		</div>
 
-		<div class="col-sm">
-			<a class="" href="accion.html">
-				<div class="card w-100" id="accion">
-					<h2 class="cattitle">Acción</h2>
-				</div>
-			</a>	
+
+	<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+		  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 5"></button>
 		</div>
-		<div class="col-sm">
-			<a class="" href="lucha.html">	
-				<div class="card w-100" id="lucha">
-					<h2 class="cattitle">Lucha</h2>
-				</div>
-			</a>
+		<div class="carousel-inner">
+		  <div class="carousel-item active" data-bs-interval="10000">
+			<img src="img/terror.png" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block text-white">
+			  <h5>¡Sumérgete en la oscuridad!</h5>
+			  <p> ¿Te atreves a explorar los rincones más oscuros? Descubre el terror en cada sombra y enfrenta tus miedos.</p>
+			  <a href="terror.html" class="btn btn-danger">Ver más</a>
+			</div>
+		  </div>
+		  <div class="carousel-item" data-bs-interval="2000">
+			<img src="img/accion.png" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block text-white">
+			  <h5>¡Adrenalina pura en cada bala!</h5>
+			  <p>Prepárate para la acción sin límites. Enfréntate a desafíos intensos, combates épicos y aventuras llenas de emoción.</p>
+			  <a href="accion.html" class="btn btn-danger">Ver más</a>
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			<img src="img/lucha.png" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block text-white">
+			  <h5>¡Demuestra tu fuerza y habilidad!</h5>
+			  <p> El ring te espera para que des lo mejor de ti. Libra batallas épicas, domina técnicas impresionantes y alcanza la gloria.</p>
+			  <a href="lucha.html" class="btn btn-danger">Ver más</a>
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			<img src="img/deportes.png" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block text-white">
+			  <h5>¡Siente la pasión del deporte!</h5>
+			  <p> Vive la emoción de la competición en cada partido. Desde fútbol hasta baloncesto, encuentra tu deporte favorito y compite por la victoria.</p>
+			  <a href="deporte.html" class="btn btn-danger">Ver más</a>
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			<img src="img/carreras.png" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-none d-md-block text-white">
+			  <h5>¡Acelera hacia la gloria!</h5>
+			  <p>Pon a prueba tu habilidad al volante en emocionantes carreras. Desde circuitos urbanos hasta pistas off-road, desafía a tus rivales y alcanza la meta.</p>
+			  <a href="carreras.html" class="btn btn-danger">Ver más</a>
+			</div>
+		  </div>
+
 		</div>
-		<div class="col-sm">
-			<a class="" href="deporte.html">
-				<div class="card w-100" id="deporte">
-					<h2 class="cattitle">Deporte</h2>
-				</div>
-			</a>
-		</div>
-		<div class="col-sm">
-			<a class="" href="carreras.html">
-				<div class="card w-100" id="carreras">
-					<h2 class="cattitle">Carreras</h2>
-				</div>
-			</a>
-		</div>
-	</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
 	   
 	   
 			
@@ -116,13 +147,8 @@
 	
 	</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"> </script>
-	
-	
-	
 </body>
 </html>
